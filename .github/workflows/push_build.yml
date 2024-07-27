@@ -20,6 +20,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         submodules: recursive
+        token: ${{ secrets.PAT_TOKEN }}
         #settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Build submodule
