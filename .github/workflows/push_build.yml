@@ -20,7 +20,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         submodules: recursive
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
+        #settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Build submodule
       run: mvn -B compile --file dictionary-jpa/pom.xml
