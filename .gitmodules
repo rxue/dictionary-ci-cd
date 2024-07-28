@@ -1,4 +1,3 @@
 [submodule "dictionary-jpa"]
 	path = dictionary-jpa
-  url = https://github.com/rxue/dictionary-jpa.git
-  branch = main
+  url = git@github.com:rxue/dictionary-jpa.git
