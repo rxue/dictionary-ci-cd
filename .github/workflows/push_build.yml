@@ -25,6 +25,7 @@ jobs:
       run: |
         cd dictionary-jpa
         git checkout main
-        ls -al dictionary-jpa
+        ls -al 
+        cd ..
     - name: Build submodule
       run: mvn -B compile --file dictionary-jpa/pom.xml
