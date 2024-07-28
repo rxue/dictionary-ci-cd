@@ -19,7 +19,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        submodules: recursive
+        submodules: true
         #settings-path: ${{ github.workspace }} # location for the settings.xml file
     - name: List submodule content
       run: |
