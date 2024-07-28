@@ -23,8 +23,8 @@ jobs:
         submodules: recursive
         token: ${{ secrets.PAT_TOKEN }}
         #settings-path: ${{ github.workspace }} # location for the settings.xml file
-    - name: list directory content
+    - name: list submodule content
       run: |
-        ls -al
+        ls -al dictionary-jpa
     - name: Build submodule
       run: mvn -B compile --file dictionary-jpa/pom.xml
