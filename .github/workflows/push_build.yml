@@ -23,7 +23,8 @@ jobs:
         #settings-path: ${{ github.workspace }} # location for the settings.xml file
     - name: List submodule content
       run: |
-        git submodule sync --recursive
+        cd dictionary-jpa
+        git checkout main
         ls -al dictionary-jpa
     - name: Build submodule
       run: mvn -B compile --file dictionary-jpa/pom.xml
